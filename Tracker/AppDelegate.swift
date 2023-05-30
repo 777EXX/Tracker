@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Tracker
 //
-//  Created by MacBook on 19.05.2023.
+//  Created by Alexey on 18.05.2023.
 //
 
 import UIKit
