@@ -11,7 +11,7 @@ final class TrackerView {
     
     lazy var emptyLabel: UILabel = {
         let element = UILabel()
-        element.text = "Что будем отслеживать?"
+        //element.text = "Что будем отслеживать?"
         element.textColor = .ypBlack
         element.textAlignment = .center
         element.font = .systemFont(ofSize: 12, weight: .medium)
@@ -20,7 +20,7 @@ final class TrackerView {
     
     lazy var emptyImage: UIImageView = {
         let element = UIImageView()
-        element.image = Resourses.Images.trackerEmptyImage
+        //element.image = Resourses.Images.trackerEmptyImage
         return element
     }()
     
@@ -28,6 +28,7 @@ final class TrackerView {
         let collectionViewLayout = UICollectionViewFlowLayout()
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: collectionViewLayout)
         collectionView.backgroundColor = .ypWhite
+        collectionView.contentInset = UIEdgeInsets(top: 24, left: 0, bottom: 0, right: 0)
         return collectionView
     }()
     
@@ -36,6 +37,8 @@ final class TrackerView {
         element.preferredDatePickerStyle = .compact
         element.datePickerMode = .date
         element.layer.cornerRadius = 8
+        element.locale = Locale(identifier: "ru_RU")
+        element.calendar.firstWeekday = 2
         return element
     }()
     
@@ -45,6 +48,15 @@ final class TrackerView {
         element.font = .systemFont(ofSize: 17, weight: .regular)
         element.returnKeyType = .search
         element.textColor = .ypBlack
+        element.clearButtonMode = .never
+        return element
+    }()
+    
+    lazy var cancelButton: UIButton = {
+        let element = UIButton(type: .system)
+        element.tintColor = .ypBlue
+        element.setTitle("Отменить", for: .normal)
+        element.titleLabel?.font = .systemFont(ofSize: 17, weight: .regular)
         return element
     }()
     
