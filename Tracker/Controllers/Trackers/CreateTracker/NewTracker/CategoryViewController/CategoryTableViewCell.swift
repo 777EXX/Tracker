@@ -1,9 +1,4 @@
-//
-//  CategoryTableViewCell.swift
-//  Tracker
-//
-//  Created by Alexey on 26.05.2023.
-//
+
 
 import UIKit
 
@@ -21,10 +16,6 @@ final class CategoryTableViewCell: UITableViewCell {
         backgroundColor = .ypBackground
         setupView()
         addConstraints()
-    }
-    
-    func configureCell(text: String) {
-        label.text = text
     }
     
     private func setupView() {

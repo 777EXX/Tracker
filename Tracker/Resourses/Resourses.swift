@@ -1,9 +1,4 @@
-//
-//  Resourses.swift
-//  Tracker
-//
-//  Created by Alexey on 24.05.2023.
-//
+
 
 import UIKit
 
@@ -22,5 +17,13 @@ enum Resourses {
         case Пятница
         case Суббота
         case Воскресенье
+    }
+    
+    enum TrackerStoreError: Error {
+        case decodingErrorInvalidColorHex
+        case decodingErrorInvalidEmojies
+        case decodingErrorInvalidName
+        case decodingErrorInvalidId
+        case decodingErrorInvalidSchedule
     }
 }

@@ -1,15 +1,7 @@
-//
-//  TabBarController.swift
-//  Tracker
-//
-//  Created by Alexey on 24.05.2023.
-//
 
 import UIKit
 
 final class TabBarController: UITabBarController {
-    
-    var presenter: TrackerViewPresenterProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()

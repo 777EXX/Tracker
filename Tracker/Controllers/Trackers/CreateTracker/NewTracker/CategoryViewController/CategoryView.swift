@@ -1,9 +1,3 @@
-//
-//  CategoryView.swift
-//  Tracker
-//
-//  Created by Alexey on 25.05.2023.
-//
 
 import UIKit
 
@@ -37,7 +31,6 @@ final class CategoryView {
         let element = UITableView()
         element.layer.cornerRadius = 16
         element.separatorStyle = .singleLine
-        element.isScrollEnabled = false
         return element
     }()
     

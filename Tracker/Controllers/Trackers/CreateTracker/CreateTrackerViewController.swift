@@ -1,9 +1,3 @@
-//
-//  NewTrackerViewController.swift
-//  Tracker
-//
-//  Created by Alexey on 24.05.2023.
-//
 
 import UIKit
 import SnapKit

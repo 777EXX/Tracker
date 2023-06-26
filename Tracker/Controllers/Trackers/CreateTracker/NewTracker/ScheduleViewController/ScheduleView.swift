@@ -1,9 +1,4 @@
-//
-//  ScheduleView.swift
-//  Tracker
-//
-//  Created by Alexey on 25.05.2023.
-//
+
 
 import UIKit
 
@@ -21,6 +16,7 @@ final class ScheduleView {
         element.layer.cornerRadius = 16
         element.separatorStyle = .singleLine
         element.allowsSelection = false
+        element.isScrollEnabled = false
         return element
     }()
     

@@ -1,9 +1,4 @@
-//
-//  TrackerSupplementaryView.swift
-//  Tracker
-//
-//  Created by Alexey on 25.05.2023.
-//
+
 
 import UIKit
 import SnapKit

@@ -1,9 +1,4 @@
-//
-//  SchedulePresenterProtocol.swift
-//  Tracker
-//
-//  Created by Alexey on 01.06.2023.
-//
+
 
 import Foundation
 

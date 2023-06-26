@@ -1,9 +1,4 @@
-//
-//  TrackerView.swift
-//  Tracker
-//
-//  Created by Alexey on 25.05.2023.
-//
+
 
 import UIKit
 
@@ -11,7 +6,6 @@ final class TrackerView {
     
     lazy var emptyLabel: UILabel = {
         let element = UILabel()
-        //element.text = "Что будем отслеживать?"
         element.textColor = .ypBlack
         element.textAlignment = .center
         element.font = .systemFont(ofSize: 12, weight: .medium)
