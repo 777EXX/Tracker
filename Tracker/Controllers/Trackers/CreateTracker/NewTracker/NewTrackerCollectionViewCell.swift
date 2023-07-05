@@ -1,3 +1,9 @@
+//
+//  NewTrackerCollectionCell.swift
+//  Tracker
+//
+//  Created by Dmitry Medvedev on 24.05.2023.
+//
 
 import UIKit
 import SnapKit
@@ -10,7 +16,7 @@ final class NewTrackerCollectionViewCell: UICollectionViewCell {
         return element
     }()
     
-    private lazy var colorImage: UIImageView = {
+    lazy var colorImage: UIImageView = {
         let element = UIImageView()
         element.layer.cornerRadius = 8
         return element

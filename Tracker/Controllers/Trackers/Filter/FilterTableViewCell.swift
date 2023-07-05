@@ -1,4 +1,9 @@
-
+//
+//  FilterTableViewCell.swift
+//  Tracker
+//
+//  Created by Dmitry Medvedev on 25.05.2023.
+//
 
 import UIKit
 
@@ -22,6 +27,7 @@ final class FilterTableViewCell: UITableViewCell {
     }
     
     private func setupView() {
+        backgroundColor = .ypBackground
         addSubview(label)
     }
     

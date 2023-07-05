@@ -1,4 +1,9 @@
-
+//
+//  FilterViewController.swift
+//  Tracker
+//
+//  Created by Dmitry Medvedev on 25.05.2023.
+//
 
 import UIKit
 import SnapKit
@@ -46,7 +51,6 @@ extension FilterViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "FilterTableViewCell", for: indexPath) as? FilterTableViewCell else { return UITableViewCell() }
         
         cell.configureCell(text: titles[indexPath.row])
-        cell.backgroundColor = .ypBackground
         
         return cell
     }

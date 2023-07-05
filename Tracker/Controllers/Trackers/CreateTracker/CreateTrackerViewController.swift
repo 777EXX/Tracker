@@ -1,3 +1,9 @@
+//
+//  NewTrackerViewController.swift
+//  Tracker
+//
+//  Created by Dmitry Medvedev on 24.05.2023.
+//
 
 import UIKit
 import SnapKit
@@ -5,7 +11,6 @@ import SnapKit
 final class CreateTrackerViewController: UIViewController, CreateTrackerViewControllerProtocol {
     
     private let newTrackerView = CreateTrackerView()
-    var presenter: TrackerViewPresenterProtocol?
     var viewController: TrackerViewControllerProtocol?
     
     override func viewDidLoad() {
@@ -36,7 +41,6 @@ final class CreateTrackerViewController: UIViewController, CreateTrackerViewCont
     func switchToTrackerVC() {
         dismiss(animated: true)
         viewController?.setupTrackersFromDatePicker()
-        viewController?.reloadCollectionView()
     }
 }
 
