@@ -2,7 +2,7 @@
 //  TrackerCollectionViewCellDelegate.swift
 //  Tracker
 //
-//  Created by Dmitry Medvedev on 01.06.2023.
+//  Created by Alexey on 01.06.2023.
 //
 
 import Foundation

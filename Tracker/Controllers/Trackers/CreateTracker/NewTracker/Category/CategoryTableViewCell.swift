@@ -2,7 +2,7 @@
 //  CategoryTableViewCell.swift
 //  Tracker
 //
-//  Created by Dmitry Medvedev on 26.05.2023.
+//  Created by Alexey on 26.05.2023.
 //
 
 import UIKit

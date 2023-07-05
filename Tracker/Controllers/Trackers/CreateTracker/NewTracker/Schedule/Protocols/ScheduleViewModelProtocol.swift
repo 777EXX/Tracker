@@ -2,7 +2,7 @@
 //  ScheduleViewModelProtocol.swift
 //  Tracker
 //
-//  Created by Dmitry Medvedev on 29.06.2023.
+//  Created by Alexey on 29.06.2023.
 //
 
 import Foundation

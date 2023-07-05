@@ -2,7 +2,7 @@
 //  FirstOnboardingViewController.swift
 //  Tracker
 //
-//  Created by Dmitry Medvedev on 27.06.2023.
+//  Created by Alexey on 27.06.2023.
 //
 
 import UIKit

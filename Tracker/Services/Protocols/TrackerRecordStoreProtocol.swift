@@ -2,7 +2,7 @@
 //  TrackerRecordStoreProtocol.swift
 //  Tracker
 //
-//  Created by Dmitry Medvedev on 14.06.2023.
+//  Created by Alexey on 14.06.2023.
 //
 
 import Foundation

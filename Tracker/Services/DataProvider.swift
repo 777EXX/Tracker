@@ -2,7 +2,7 @@
 //  DataProvider.swift
 //  Tracker
 //
-//  Created by Dmitry Medvedev on 09.06.2023.
+//  Created by Alexey on 09.06.2023.
 //
 
 import UIKit
