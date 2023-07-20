@@ -1,20 +1,41 @@
-//
-//  AppDelegate.swift
-//  Tracker
-//
-//  Created by Alexey on 18.05.2023.
-//
+
 
 import UIKit
 import CoreData
+import YandexMobileMetrica
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    lazy var persistantContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "Model")
+        
+        container.loadPersistentStores { persistantStore, error in
+            if let error = error {
+                assertionFailure("failure loadPersistentStores")
+            }
+        }
+        
+        return container
+    }()
+    
+    func saveContext() {
+        let context = persistantContainer.viewContext
+        
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch {
+                context.rollback()
+            }
+        }
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let configuration = YMMYandexMetricaConfiguration.init(apiKey: "fcae13fd-ae6c-4563-9a58-c1ce4b87e1c5")
+        if let configuration = configuration {
+            YMMYandexMetrica.activate(with: configuration)
+        }
         return true
     }
 
@@ -32,26 +53,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-    lazy var persistantContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "CoreDataModel")
-        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
-            if let error = error as NSError? {
-                fatalError("Unresolved error \(error), \(error.userInfo)")
-            }
-        })
-        return container
-    }()
-    
-    func saveContext() {
-        let context = persistantContainer.viewContext
-        
-        if context.hasChanges {
-            do {
-                try context.save()
-            } catch {
-                context.rollback()
-            }
-        }
-    }
+
 }
 
